@@ -1,0 +1,111 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#result-area {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#chances-area {
+    font-size: 1.2rem;
+    color: #333;
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#user-input {
+    font-size: 1rem;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ff9a9e;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    -moz-appearance: textfield; /* Firefox용 */
+    -webkit-appearance: none; /* Chrome, Safari용 */
+    appearance: none; /* 기본 숫자 컨트롤러 제거 */
+}
+
+#user-input:focus {
+    border-color: #fad0c4;
+    box-shadow: 0 0 8px rgba(250, 208, 196, 0.5);
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#play-button {
+    background: #6a11cb;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+#play-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#reset-button {
+    background: #ff416c;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+#reset-button:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #user-input {
+        width: 200px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

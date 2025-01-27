@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 숫자 맞추기 게임</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🎯 랜덤 숫자 맞추기</h1>
+        <p>1부터 100 사이의 숫자를 맞춰보세요!</p>
+    </header>
+    <main>
+        <section class="game-container">
+            <article id="result-area" class="result-box">결과</article>
+            <article id="chances-area" class="chances-box">남은 코인: 5</article>
+            <input 
+                type="number" 
+                id="user-input" 
+                placeholder="숫자를 입력하세요" 
+                min="1" 
+                max="100" 
+                aria-label="숫자 입력"
+            />
+            <div class="button-container">
+                <button id="play-button" class="btn primary">🎮 GO!</button>
+                <button id="reset-button" class="btn secondary">🔄 RESET</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 랜덤 숫자 게임 | Designed with ❤️</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
